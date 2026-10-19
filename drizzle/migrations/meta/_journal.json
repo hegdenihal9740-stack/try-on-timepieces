@@ -57,6 +57,13 @@
       "when": 1792382236953,
       "tag": "0007_noop_apply_store",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1792382612839,
+      "tag": "0008_review_photos",
+      "breakpoints": true
     }
   ]
 }
