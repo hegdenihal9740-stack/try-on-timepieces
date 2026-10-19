@@ -146,6 +146,7 @@ export type Database = {
           comment: string
           created_at: string
           id: string
+          photos: string[]
           product_id: string
           rating: number
           user_id: string
@@ -156,6 +157,7 @@ export type Database = {
           comment: string
           created_at?: string
           id?: string
+          photos?: string[]
           product_id: string
           rating: number
           user_id?: string
@@ -166,6 +168,7 @@ export type Database = {
           comment?: string
           created_at?: string
           id?: string
+          photos?: string[]
           product_id?: string
           rating?: number
           user_id?: string
