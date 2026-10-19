@@ -27,7 +27,9 @@ export function Reviews({ tone, rating, total }: { tone: string; rating: number;
     const paths = rows.flatMap((r) => r.photos ?? []);
     if (paths.length) {
       const { data: signed } = await supabase.storage.from('reviews').createSignedUrls(paths, 3600);
-      setUrls(Object.fromEntries((signed ?? []).filter((s) => s.signedUrl).map((s) => [s.path!, s.signedUrl])));
+      const map: Record<string, string> = {};
+      for (const s of signed ?? []) if (s.path && s.signedUrl) map[s.path] = s.signedUrl;
+      setUrls(map);
     }
   }, [tone]);
   useEffect(() => {
