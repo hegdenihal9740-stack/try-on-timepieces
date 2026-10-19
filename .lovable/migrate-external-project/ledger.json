@@ -1,0 +1,7 @@
+[
+ {"capability":"code","source":"github","outcome":"migrate","status":"verified","next_action":""},
+ {"capability":"schema","source":"drizzle migrations","outcome":"migrate","status":"verified","next_action":""},
+ {"capability":"records","source":"old Lovable Cloud","outcome":"migrate","status":"pending","next_action":"user exports products, orders, reviews, inventory as CSV"},
+ {"capability":"auth","source":"email + Google","outcome":"migrate","status":"pending","next_action":"existing users re-register; store owner signs in as nihalhegde1@gmail.com"},
+ {"capability":"storage product-images","source":"public bucket","outcome":"migrate","status":"blocked","next_action":"workspace blocks public buckets; enable in Settings → Privacy & Security"}
+]
